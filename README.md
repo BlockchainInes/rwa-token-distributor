@@ -17,7 +17,6 @@ The architecture isolates high-throughput data processing from deterministic sta
 
 ## Core Project Directory
 
-```text
 ├── contracts/
 │   └── RWADistributor.sol      # Core Smart Contract Engine
 ├── scripts/
@@ -27,27 +26,34 @@ The architecture isolates high-throughput data processing from deterministic sta
 ├── .gitignore                  # Source control protection rulebook
 └── hardhat.config.js           # Hardhat v3 ESM infrastructure runtime
 
+### Protocol Execution Proof (Terminal & Smart Contract Verification)
+
+![Execution Proof](Captura de pantalla 2026-05-16 130535.png)
+
 ## Setup & Deployment Guide
 
 ### 1. Installation
 Install core dependencies within the local workspace environment:
-Befehl: npm install
+
+npm install
 
 ### 2. Configuration Setup
 Populate runtime environment variables inside a .env deployment file:
-PRIVATE_KEY=0xYourSecp256k1PrivateKeyHere
-RPC_URL=https://eth-mainnet.g.alchemy.com/v2/YourApiKey
+
+PRIVATE_KEY=0x0000000000000000000000000000000000000000000000000000000000000001
+RPC_URL=https://eth-mainnet.g.alchemy.com/v2/YOUR_ANONYMOUS_API_KEY_HERE
 
 ### 3. Compilation Pipeline
 Compile the Solidity source code via the Hardhat compiler infrastructure:
-Befehl: npx hardhat compile
+
+npx hardhat compile
 
 ### 4. Merkle Root Generation
 Execute the processing script to evaluate data payloads and export the active cryptographic proof parameters:
-Befehl: node scripts/generateMerkle.js
+
+node scripts/generateMerkle.js
 
 ### 5. Deployment Simulation
 Initialize the deployment script to dry-run transaction costs and calculate the deterministic target contract deployment address:
-Befehl: node scripts/deploy.js
 
-![Execution Proof](Captura de pantalla 2026-05-16 130535.png)
+node scripts/deploy.js
