@@ -15,6 +15,8 @@ The architecture isolates high-throughput data processing from deterministic sta
 1. **Off-Chain Engine:** A high-performance Node.js environment processes the investor distribution registry, structures balances, and generates an immutable `StandardMerkleTree`.
 2. **On-Chain Verification:** Eligible participants present a cryptographic `bytes32[] proof`. The `RWADistributor` contract validates the claim atomically by resolving leaf components through `MerkleProof.verify`.
 
+![Execution Proof](Captura de pantalla 2026-05-16 130535.png)
+
 ## Core Project Directory
 
 ```text
