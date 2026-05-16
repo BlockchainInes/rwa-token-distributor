@@ -1,4 +1,4 @@
-# RWA Dividend Distribution Protocol
+# RWA Token Distribution Protocol
 
 An institutional-grade, highly optimized asset distribution framework engineered for Real World Asset (RWA) tokenization pipelines. This system leverages cryptographic Merkle Trees to achieve O(1) on-chain verification complexity, enabling gas-efficient, secure, and privacy-compliant dividend or reward distribution to verified investors.
 
