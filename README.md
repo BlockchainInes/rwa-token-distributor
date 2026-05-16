@@ -49,3 +49,5 @@ Befehl: node scripts/generateMerkle.js
 ### 5. Deployment Simulation
 Initialize the deployment script to dry-run transaction costs and calculate the deterministic target contract deployment address:
 Befehl: node scripts/deploy.js
+
+![Execution Proof](Captura de pantalla 2026-05-16 130535.png)
