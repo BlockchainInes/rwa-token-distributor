@@ -17,6 +17,7 @@ The architecture isolates high-throughput data processing from deterministic sta
 
 ## Core Project Directory
 
+```text
 ├── contracts/
 │   └── RWADistributor.sol      # Core Smart Contract Engine
 ├── scripts/
